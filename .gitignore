@@ -2,9 +2,7 @@
 /node_modules
 /.pnp
 .pnp.js
-.yarn
 .yarn/*
-/.yarn/*
 !.yarn/cache
 !.yarn/releases
 !.yarn/plugins
