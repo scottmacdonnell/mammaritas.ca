@@ -1,6 +1,7 @@
 {
   "name": "mammaritas.ca",
   "productName": "Mamma Rita's Cucina",
+  "packageManager": "yarn@3.0.2",
   "version": "0.1.0",
   "description": "The website for Mamma Rita's Cucina in Markham, Ontario.",
   "repository": "https://github.com/scottmacdonnell/mammaritas.ca.git",
@@ -14,6 +15,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "graphql": "^15.6.1",
+    "graphql-request": "^3.5.0",
     "next": "11.1.2",
     "react": "17.0.2",
     "react-dom": "17.0.2",
