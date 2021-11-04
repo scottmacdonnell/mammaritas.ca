@@ -1,0 +1,104 @@
+@import '../breakpoints';
+
+@mixin Text {
+  font-feature-settings: "rlig" 1,"calt" 0;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: inherit;
+}
+
+@mixin Heading {
+  margin: 0;
+  display: block;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: 600;
+  letter-spacing: -.05em;
+  color: inherit;
+  line-height: 1.6;
+}
+
+.Heading1 {
+  @include Text;
+  @include Heading;
+  font-size: 3.5rem;
+  line-height: 1.2;
+  @media screen and (max-width: $breakpointMedium) { font-size: 2.25rem; }
+}
+
+.Heading2 {
+  @include Text;
+  @include Heading;
+  font-size: 3rem;
+  line-height: 1.2;
+  @media screen and (max-width: $breakpointMedium) { font-size: 2rem; }
+}
+
+.Heading3 {
+  @include Text;
+  @include Heading;
+  font-size: 2.5rem;
+  line-height: 1.2;
+  @media screen and (max-width: $breakpointMedium) { font-size: 1.75rem; }
+}
+
+.Heading4 {
+  @include Text;
+  @include Heading;
+  font-size: 2rem;
+  line-height: 1.41;
+  @media screen and (max-width: $breakpointMedium) { font-size: 1.5rem; }
+}
+
+.Heading5 {
+  @include Text;
+  @include Heading;
+  font-size: 1.5rem;
+  line-height: 1.41;
+  @media screen and (max-width: $breakpointMedium) { font-size: 1.25rem; }
+}
+
+.Heading6 {
+  @include Text;
+  @include Heading;
+  font-size: 1rem;
+  line-height: 1.75em;
+}
+
+.SHeading {
+  @include Text;
+  @include Heading;
+  font-weight: 400;
+  letter-spacing: -.02;
+  font-size: 1.25rem;
+}
+
+.Small {
+  @include Text;
+  letter-spacing: .2rem;
+  margin-right: -.2rem;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.Paragraph {
+  @include Text;
+  letter-spacing: -.02;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.Anchor {
+  -webkit-tap-highlight-color: none;
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+  transition-property: color;
+  transition-duration: .1s;
+  transition-timing-function: ease;
+}

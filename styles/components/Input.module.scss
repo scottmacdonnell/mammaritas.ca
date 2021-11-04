@@ -1,0 +1,186 @@
+.Date,
+.Email,
+.Tel,
+.Text {
+  display: inline-flex;
+  appearance: auto;
+  -webkit-appearance: none;
+  outline: none;
+  overflow: hidden;
+
+  min-width: 0;
+  width: 100%;
+  height: 48px;
+  padding: 0 12px;
+  margin: 0em;
+
+  font-size: 1rem;
+
+  border-radius: 5px;
+  border-width: 1px;
+  border-style: solid;
+  border-image: initial;
+
+  color: #000000;
+  background: #FFFFFF;
+  border-color: #EAEAEA;
+  transition: border-color .15s ease;
+  
+  // @media (prefers-color-scheme: dark) {
+  //   color: #FFFFFF;
+  //   background: #000000;
+  //   border-color: #333333;
+  // }
+}
+
+.Spacer {
+  display: block;
+  width: 1px;
+  height: 1px;
+  min-width: 1px;
+  min-height: 1px;
+  margin-left: calc(24px - 1px);
+  margin-top: calc(24px - 1px);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-top: 11px;
+}
+
+.Date:active,
+.Date:focus,
+.Email:active,
+.Email:focus,
+.Tel:active,
+.Tel:focus,
+.Text:active,
+.Text:focus {
+  border-color: #666666;
+}
+
+.Files {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+.Files + label {
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  min-width: 0;
+  width: 100%;
+  height: 48px;
+  padding: 0 12px;
+  margin: 0em;
+
+  font-size: 1rem;
+  font-weight: 400;
+
+
+  border-radius: 5px;
+  border-width: 1px;
+  border-style: solid;
+  border-image: initial;
+
+  color: #000000;
+  background: #FFFFFF;
+  border-color: #EAEAEA;
+  transition: border-color .15s ease;
+  
+  // @media (prefers-color-scheme: dark) {
+  //   color: #FFFFFF;
+  //   background: #000000;
+  //   border-color: #333333;
+  // }
+}
+
+// .Files,
+// .FilesLabel {
+//   display: inline-flex;
+//   appearance: auto;
+//   -webkit-appearance: none;
+//   outline: none;
+//   overflow: hidden;
+  
+//   cursor: pointer;
+// 	pointer-events: none;
+
+//   min-width: 0;
+//   width: 100%;
+//   height: 48px;
+//   padding: 0 12px;
+//   margin: 0em;
+
+//   font-size: 1rem;
+
+//   border-radius: 5px;
+//   border-width: 1px;
+//   border-style: solid;
+//   border-image: initial;
+
+//   color: #000000;
+//   background: #FFFFFF;
+//   border-color: #EAEAEA;
+//   transition: border-color .15s ease;
+// }
+
+.Files:focus,
+.FilesLabel:focus {
+  outline: 1px dotted #000;
+  outline: -webkit-focus-ring-color auto 5px;
+}
+
+.Files:active,
+.Files:focus,
+.FilesLabel:active,
+.FilesLabel:focus {
+  border-color: #666666;
+}
+
+.Textarea {
+  position: relative;
+  overflow: auto;
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+  height: 108px;
+  min-height: 108px;
+  writing-mode: horizontal-tb;
+  -webkit-writing-mode: horizontal-tb !important;
+  text-rendering: auto;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: start;
+  appearance: auto;
+  -webkit-rtl-ordering: logical;
+  cursor: text;
+  margin: 0;
+  display: inline-flex;
+  -webkit-appearance: none;
+  padding: 12px 12px;
+  line-height: normal;
+  order: 1;
+  outline: none;
+  transition: border-color .15s ease;
+  font-size: 1rem;
+  resize: vertical;
+  border: 1px solid #eaeaea;
+  border-radius: 5px;
+
+  background: #ffffff;
+  color: #000000;
+}
+
+.Textarea:focus {
+  border-color: #666666;
+}

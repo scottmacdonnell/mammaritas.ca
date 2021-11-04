@@ -1,0 +1,161 @@
+@import '../breakpoints';
+
+.Wrapper {
+  padding: 1.5rem 0;
+  display: block;
+  z-index: 2;
+  width: 100%;
+}
+
+.OverlayWrapper {
+  padding: 1.5rem 0;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  .ToggleWrapper {
+    .Toggle {
+      .IconContainer {
+        .Icon {
+          .TopBar {
+            background: #FFFFFF;
+          }
+          .BtmBar {
+            background: #FFFFFF;
+          }
+        }
+      }
+    }
+  
+    .ToggleActive {
+      .IconContainer {
+        .Icon {
+          .TopBar {
+            background: #000000;
+            @media (prefers-color-scheme: dark) { background: #FFFFFF; }
+          }
+          .BtmBar {
+            background: #000000;
+            @media (prefers-color-scheme: dark) { background: #FFFFFF; }
+          }
+        }
+      }
+    }
+  }
+}
+
+.Navbar {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 1rem;
+}
+
+.Logo {
+  display: flex;
+
+  svg {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+.ToggleWrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  .Toggle {
+    display: block;
+    z-index: 99;
+    height: 18px;
+    width: 20px;
+    margin: 0;
+    .IconContainer {
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+      transform: rotate(0deg);
+      transition: all 0.3s;
+      user-select: none;
+      -webkit-tap-highlight-color: transparent;
+      .Icon {
+        width: 20px;
+        height: 10px;
+        position: relative;
+        display: block;
+        margin: 3px auto;
+        top: 50%;
+        .TopBar {
+          width: 100%;
+          height: 1px;
+          display: block;
+          position: relative;
+          transition: all 0.3s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+          transition-delay: 0s;
+          transform: translateY(0px) rotate(0deg);
+          background: #000000;
+          @media (prefers-color-scheme: dark) { background: #FFFFFF; }
+        }
+        .BtmBar {
+          width: 100%;
+          height: 1px;
+          display: block;
+          position: relative;
+          transition: all 0.3s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+          transition-delay: 0s;
+          transform: translateY(8px) rotate(0deg);
+          background: #000000;
+          @media (prefers-color-scheme: dark) { background: #FFFFFF; }
+        }
+      }
+    }
+  }
+
+  .ToggleActive {
+    position: fixed;
+    .IconContainer {
+      transform: rotate(90deg);
+      .Icon {
+        .TopBar {
+          transition: all 0.4s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+          transition-delay: 0.2s;
+          transform: translateY(6px) rotate(45deg);
+          background: #000000;
+          @media (prefers-color-scheme: dark) { background: #FFFFFF; }
+        }
+        .BtmBar {
+          transition: all 0.4s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+          transition-delay: 0.2s;
+          transform: translateY(5px) rotate(-45deg);
+          background: #000000;
+          @media (prefers-color-scheme: dark) { background: #FFFFFF; }
+        }
+      }
+    }
+  }
+}
+
+.NavView {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0vh;
+  z-index: 98;
+  opacity: 0%;
+  transition: opacity 0.2s ease;
+  .NavViewContainer {
+    width: 100%;
+    height: 100%;
+    background: #FFFFFF;
+    @media (prefers-color-scheme: dark) { background: #000000; }
+  }
+}
+
+.NavViewActive {
+  height: 100vh;
+  opacity: 100%;
+}
