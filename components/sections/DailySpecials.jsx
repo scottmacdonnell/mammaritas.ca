@@ -72,7 +72,7 @@ export default function DailySpecials() {
 function OurMenuButton() {
   return (
     <Text.Anchor
-      href="/dev/menu"
+      href="/beta/menu"
     >
       <button className={styles.OurMenuButton}>
         See Full Menu
