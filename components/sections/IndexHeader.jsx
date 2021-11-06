@@ -61,7 +61,7 @@ function Subtitle(props) {
 function OurMenuButton() {
   return (
     <Text.Anchor
-      href="/dev/menu"
+      href="/beta/menu"
     >
       <button className={styles.OurMenuButton}>
         Our Menu
