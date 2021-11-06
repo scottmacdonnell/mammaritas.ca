@@ -1,0 +1,13 @@
+@import '../../breakpoints';
+
+.Title {
+  h1 {
+    text-transform: uppercase;
+    color: #D2C3AE;
+    font-size: 10rem;
+    font-weight: 700;
+    @media screen and (max-width: $breakpointMedium) {
+      font-size: 3.5rem;
+    }
+  }
+}

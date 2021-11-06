@@ -1,0 +1,24 @@
+@import '../../breakpoints';
+
+.ContactInfo {
+  padding: 3rem 0;
+  background: #D2C3AE;
+  color: #101010;
+
+  h6 {
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+}
+
+.Grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 2rem;
+
+  @media screen and (max-width: $breakpointMedium) {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, auto);
+  }
+}

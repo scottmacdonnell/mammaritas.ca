@@ -14,11 +14,14 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@googlemaps/js-api-loader": "^1.12.8",
+    "@sendgrid/mail": "^7.6.0",
     "framer-motion": "^5.2.0",
     "next": "12.0.2",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "sass": "^1.43.4"
+    "sass": "^1.43.4",
+    "swr": "^1.0.1"
   },
   "devDependencies": {
     "eslint": "7",

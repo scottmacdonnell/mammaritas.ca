@@ -1,8 +1,9 @@
 @import '../breakpoints';
 
 .Wrapper {
+  background: #101010;
   padding: 3rem 0;
-  color: #666666;
+  color: #D2C3AE;
 }
 
 .Footer {
@@ -47,13 +48,13 @@
     li::before {
       content: '–';
       display: none;
-      color: #888888;
+      color: #d0c3ba;
       position: absolute;
       margin-left: -15px;
     }
     li:active,
     li:hover {
-      color: #000000;
+      color: #fff1e6;
     }
   }
 }
@@ -71,7 +72,7 @@
 }
 
 .Tagline {
-  display: grid;color: rgb(102, 102, 102);
+  display: grid;color: rgb(208, 195, 186);
   grid-template-columns: 1fr;
   grid-template-rows: repeat(2, auto);
   gap: 0.5rem;

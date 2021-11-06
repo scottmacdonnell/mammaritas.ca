@@ -95,48 +95,49 @@ export default function ContactPage() {
         </Container>
         
         <hr />
+        <div style={{ background: '#101010', color: '#d4c3b1', padding: '3rem 0' }}>
+          <Container>
+            <Text.Heading2>
+              Send us a message
+            </Text.Heading2>
 
-        <Container>
-          <Text.Heading2>
-            Send us a message
-          </Text.Heading2>
+            <form>
+              <label htmlFor="name">
+                Name
+              </label>
 
-          <form>
-            <label htmlFor="name">
-              Name
-            </label>
+              <Input.Text
+                id="name"
+                placeholder="Enter name"
+                // onChange={handleChange}
+                // value={inputs.name}
+                aria-required
+              />
 
-            <Input.Text
-              id="name"
-              placeholder="Enter name"
-              // onChange={handleChange}
-              // value={inputs.name}
-              aria-required
-            />
+              <Input.Spacer />
 
-            <Input.Spacer />
+              <label htmlFor="email">
+                Email
+              </label>
 
-            <label htmlFor="email">
-              Email
-            </label>
+              <Input.Email
+                id="email"
+                placeholder="Enter email"
+                // onChange={handleChange}
+                // value={inputs.email}
+                aria-required
+              />
 
-            <Input.Email
-              id="email"
-              placeholder="Enter email"
-              // onChange={handleChange}
-              // value={inputs.email}
-              aria-required
-            />
+              <Input.Spacer />
 
-            <Input.Spacer />
+              <label htmlFor="message">
+                Message
+              </label>
 
-            <label htmlFor="message">
-              Message
-            </label>
-
-            <Input.Textarea id="message" placeholder="Enter message" />
-          </form>
-        </Container>
+              <Input.Textarea id="message" placeholder="Enter message" />
+            </form>
+          </Container>
+        </div>
       </main>
 
       <footer>
@@ -145,9 +146,9 @@ export default function ContactPage() {
             <Footer.Nav>
               <Footer.NavTitle>mammaritas.ca</Footer.NavTitle>
               <Footer.NavContent>
-                <Footer.NavItem href="/">Homepage</Footer.NavItem>
-                <Footer.NavItem href="/menu">Menu</Footer.NavItem>
-                <Footer.NavItem href="/contact">Contact Us</Footer.NavItem>
+                <Footer.NavItem href="/dev">Homepage</Footer.NavItem>
+                <Footer.NavItem href="/dev/menu">Menu</Footer.NavItem>
+                <Footer.NavItem href="/dev/contact">Contact Us</Footer.NavItem>
               </Footer.NavContent>
             </Footer.Nav>
 

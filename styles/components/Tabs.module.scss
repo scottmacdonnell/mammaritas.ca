@@ -1,0 +1,37 @@
+.Wrapper {
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: baseline;
+  padding-bottom: 1px;
+  box-shadow: 0 -1px 0 hsl(35, 29%, 65%) inset;
+  overflow-x: auto;
+}
+
+.TabContainer {
+  padding: 0 12px;
+  cursor: pointer;
+  margin-bottom: -1px;
+  border-bottom: 1px solid hsl(35, 29%, 65%);
+  outline: 0;
+}
+
+.TabContainer:first-child {
+  padding: 0 12px 0 0;
+}
+
+.Tab {
+  display: flex;
+  align-items: center;
+  margin-bottom: -1px;
+  padding: 6px 2px;
+  border-bottom: 2px solid transparent;
+  color: #666;
+  white-space: nowrap;
+}
+
+.ActiveTab {
+  color: #101010;
+  border-bottom: 2px solid #101010;
+}
