@@ -1,3 +1,5 @@
+@import '../../breakpoints';
+
 @mixin ButtonLarge {
   appearance: auto;
   writing-mode: horizontal-tb;
@@ -91,7 +93,18 @@
 }
 
 .Title {
-  color: #D2C3AE;
+  h1 {
+    margin-bottom: -0.1em;
+    text-transform: uppercase;
+    color: #D2C3AE;
+    font-weight: 800;
+    font-size: 5rem;
+    font-family: 'Gilroy', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+      Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    @media screen and (max-width: $breakpointMedium) {
+      font-size: 3rem;
+    }
+  }
 }
 
 .Subtitle {

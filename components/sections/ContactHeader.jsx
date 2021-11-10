@@ -16,7 +16,7 @@ export default function ContactHeader() {
             style={{ height: '100%', padding: '4rem 0 2rem 0', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}
           >
             <Title>
-              Contact
+              Contact Us
             </Title>
           </div>
         </Header.Overlay>

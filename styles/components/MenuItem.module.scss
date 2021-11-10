@@ -1,6 +1,13 @@
 @import '../breakpoints';
 
 .MenuItem {
+  h5 {
+    margin-bottom: -0.1em;
+    font-weight: 600;
+    font-family: 'Gilroy', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+      Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  }
+
   .Desktop {
     .ItemName {
       font-feature-settings: "rlig" 1,"calt" 0;
@@ -13,7 +20,6 @@
       margin-block-end: 0em;
       margin-inline-start: 0px;
       margin-inline-end: 0px;
-      font-weight: 700;
       color: inherit;
       font-size: 1.25rem;
       text-transform: uppercase;
@@ -38,7 +44,6 @@
       margin-inline-end: 0px;
       letter-spacing: -.05em;
       color: inherit;
-      font-weight: 700;
       font-size: 1.25rem;
     }
     
@@ -74,7 +79,6 @@
       margin-block-end: 0em;
       margin-inline-start: 0px;
       margin-inline-end: 0px;
-      font-weight: 700;
       color: inherit;
       font-size: 1rem;
       text-transform: uppercase;
@@ -99,7 +103,6 @@
       margin-inline-end: 0px;
       letter-spacing: -.05em;
       color: inherit;
-      font-weight: 700;
       font-size: 1rem;
     }
 

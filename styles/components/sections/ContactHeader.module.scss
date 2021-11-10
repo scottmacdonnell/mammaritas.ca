@@ -2,12 +2,15 @@
 
 .Title {
   h1 {
+    margin-bottom: -0.1em;
     text-transform: uppercase;
     color: #D2C3AE;
-    font-size: 10rem;
-    font-weight: 700;
+    font-weight: 800;
+    font-size: 8rem;
+    font-family: 'Gilroy', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+      Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     @media screen and (max-width: $breakpointMedium) {
-      font-size: 3.5rem;
+      font-size: 5rem;
     }
   }
 }

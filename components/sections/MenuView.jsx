@@ -28,7 +28,7 @@ export default function MenuView({ menuCategories, menuItems }) {
 
         <div
           className={styles.MenuItems}
-          style={{ padding: '1.25rem 0', display: 'flex', flexDirection: 'column', gap: '0.5rem'}}
+          style={{ padding: '1.25rem 0', display: 'flex', flexDirection: 'column', gap: '0.75rem'}}
         >
           {
             menuItems.map(

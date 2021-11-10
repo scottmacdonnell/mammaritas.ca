@@ -183,6 +183,14 @@
   padding: 3rem 0;
   background: #101010;
   color: #d2c3ae;
+
+  h2 {
+    margin-bottom: -0.1em;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: 'Gilroy', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+      Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  }
 }
 
 .LabelSpacer {

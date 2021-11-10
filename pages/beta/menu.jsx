@@ -2,6 +2,7 @@ import * as Page from '../../components/Page'
 
 import GlobalNavbar from '../../components/sections/GlobalNavbar'
 import MenuHeader from '../../components/sections/MenuHeader'
+import DailySpecials from '../../components/sections/DailySpecials'
 import MenuView from '../../components/sections/MenuView'
 import ContactForm from '../../components/sections/ContactForm'
 import GlobalFooter from '../../components/sections/GlobalFooter'
@@ -22,6 +23,7 @@ export default function MenuPage({ menuCategories, menuItems, preview }) {
       
       <main>
         <MenuHeader />
+        <DailySpecials />
         <MenuView
           menuCategories={menuCategories}
           menuItems={menuItems}

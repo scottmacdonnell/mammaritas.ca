@@ -20,9 +20,9 @@ export default function ContactInfo() {
             <Input.Spacer />
             <Input.Spacer />
 
-            <Text.Heading6>
+            <Text.Heading5>
               Address:
-            </Text.Heading6>
+            </Text.Heading5>
 
             <Text.Paragraph>
               50 McIntosh Drive, Suite 106, Markham, ON, L3R 9T3
@@ -31,9 +31,9 @@ export default function ContactInfo() {
             <Input.Spacer />
             <Input.Spacer />
 
-            <Text.Heading6>
+            <Text.Heading5>
               Telephone:
-            </Text.Heading6>
+            </Text.Heading5>
 
             <Text.Paragraph>
               N/A
@@ -42,9 +42,9 @@ export default function ContactInfo() {
             <Input.Spacer />
             <Input.Spacer />
 
-            <Text.Heading6>
+            <Text.Heading5>
               Email:
-            </Text.Heading6>
+            </Text.Heading5>
 
             <Text.Paragraph>
               mammaritascucina@gmail.com

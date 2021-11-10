@@ -16,7 +16,7 @@ export default function DailySpecials() {
 
         <div
           className={styles.Items}
-          style={{ padding: '1.25rem 0', display: 'flex', flexDirection: 'column', gap: '0.5rem'}}
+          style={{ padding: '1.25rem 0', display: 'flex', flexDirection: 'column', gap: '0.75rem'}}
         >
           <MenuItem 
             name="Bruschetta"
