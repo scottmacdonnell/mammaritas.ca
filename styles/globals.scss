@@ -19,3 +19,6 @@ a {
 * {
   box-sizing: border-box;
 }
+
+*::-moz-selection { color: #D2C3AE; background: #000000; text-shadow: none; }
+*::selection { color: #D2C3AE; background: #000000; text-shadow: none; }

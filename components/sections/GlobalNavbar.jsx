@@ -10,16 +10,16 @@ export default function GlobalNavbar() {
       </Navbar.Logo>
 
       <Navbar.NavView>
-        <Text.Anchor href="/">
-          Home
+        <Text.Anchor href="/beta/">
+          <Text.Heading3>Homepage</Text.Heading3>
         </Text.Anchor>
 
-        <Text.Anchor href="/menu">
-          Our Menu
+        <Text.Anchor href="/beta/menu">
+          <Text.Heading3>Our Menu</Text.Heading3>
         </Text.Anchor>
 
-        <Text.Anchor href="/contact">
-          Contact Us
+        <Text.Anchor href="/beta/contact">
+          <Text.Heading3>Contact Us</Text.Heading3>
         </Text.Anchor>
       </Navbar.NavView>
     </Navbar.OverlayWrapper>
