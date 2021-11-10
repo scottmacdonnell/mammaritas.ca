@@ -1,16 +1,48 @@
+@import '../../breakpoints';
+
 .OurStory {
   padding: 3rem 0;
   background: #BE180C;
   color: #d2c3ae;
+}
+
+.SectionTitle {
+  display: inline-grid;
+  float: left;
+  h2 {
+    line-height: 0.8em;
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-align: center;
+    font-family: 'Gilroy', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+      Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    letter-spacing: normal;
+    writing-mode: vertical-lr; 
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);   
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    @media screen and (max-width: $breakpointMedium) {
+      font-size: 3rem;
+    }
+  }
+}
+
+.ItemsWrapper {
+  display: flow-root;
+  padding-left: 1rem;
+}
+
+.Items {
+  padding: 0 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  h2 {
-    text-transform: uppercase;
-    font-weight: 700;
-    margin-bottom: -0.1em;
-    font-family: 'Gilroy', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-      Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  span {
+    padding-top: 2rem;
+    max-width: 480px;
   }
 }

@@ -14,7 +14,7 @@ export default function GlobalFooter() {
           </Footer.NavContent>
         </Footer.Nav>
 
-        <Footer.Nav>
+        {/* <Footer.Nav>
           <Footer.NavTitle>
             Legal
           </Footer.NavTitle>
@@ -24,7 +24,7 @@ export default function GlobalFooter() {
             <Footer.NavItem href="/legal/cookie">Cookie Policy</Footer.NavItem>
             <Footer.NavItem href="/legal/terms">Terms of Use</Footer.NavItem>
           </Footer.NavContent>
-        </Footer.Nav>
+        </Footer.Nav> */}
       </Footer.Directory>
 
       <Footer.Info>

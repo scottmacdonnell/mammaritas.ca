@@ -10,7 +10,7 @@ export default function IndexHeader() {
   return (
     <div className={styles.IndexHeader}>
       <Header.IndexWrapper>
-        <Header.Background href={headerImage} />
+        <Header.Background href={headerImage} position="left" />
 
         <Header.Overlay>
           <div className={styles.ContentBox}>

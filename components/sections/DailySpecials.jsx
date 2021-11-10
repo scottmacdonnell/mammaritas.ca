@@ -4,7 +4,7 @@ import * as Text from '../Text'
 
 import styles from '../../styles/components/sections/DailySpecials.module.scss'
 
-export default function DailySpecials() {
+export default function DailySpecials(props) {
   return (
     <div className={styles.DailySpecials}>
       <Container>
@@ -63,9 +63,13 @@ export default function DailySpecials() {
               />
             </div>
           </div>
-          <div className={styles.ButtonWrapper}>
-            <OurMenuButton />
-          </div>
+          {
+            props.showButton === true ? (
+              <div className={styles.ButtonWrapper}>
+                <OurMenuButton />
+              </div>
+            ) : ''
+          }
         </div>
       </Container>
     </div>

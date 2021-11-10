@@ -4,6 +4,7 @@ import GlobalNavbar from '../../components/sections/GlobalNavbar'
 import MenuHeader from '../../components/sections/MenuHeader'
 import DailySpecials from '../../components/sections/DailySpecials'
 import MenuView from '../../components/sections/MenuView'
+import MenuNotice from '../../components/sections/MenuNotice'
 import ContactForm from '../../components/sections/ContactForm'
 import GlobalFooter from '../../components/sections/GlobalFooter'
 
@@ -28,6 +29,7 @@ export default function MenuPage({ menuCategories, menuItems, preview }) {
           menuCategories={menuCategories}
           menuItems={menuItems}
         />
+        <MenuNotice />
         <ContactForm />
       </main>
 

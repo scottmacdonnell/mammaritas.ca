@@ -21,7 +21,7 @@ export default function IndexPage() {
       
       <main>
         <IndexHeader />
-        <DailySpecials />
+        <DailySpecials showButton />
         <OurStory />
         <ContactForm />
       </main>

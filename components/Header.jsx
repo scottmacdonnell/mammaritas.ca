@@ -22,7 +22,7 @@ export const Wrapper = (props) => {
   )
 }
 
-export const Background = ({ href }) => {
+export const Background = ({ href, position }) => {
   return (
     <div className={styles.HeaderBackground}>
       {!href ? '' : (
@@ -31,7 +31,7 @@ export const Background = ({ href }) => {
           alt="Header Background"
           layout="fill"
           objectFit="cover"
-          objectPosition="center"
+          objectPosition={position}
         />
       )}
     </div>

@@ -81,7 +81,7 @@
 
 
 .DailySpecials {
-  padding: 4rem 0;
+  padding: 3rem 0;
   background-color: #D2C3AE;
 }
 
@@ -99,6 +99,7 @@
   display: inline-grid;
   float: left;
   h2 {
+    line-height: 0.875em;
     text-transform: uppercase;
     font-size: 3.5rem;
     font-weight: 700;
