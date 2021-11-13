@@ -53,7 +53,12 @@ export default function ComingSoonPage() {
   })
 
   return (
-    <Page.Wrapper>
+    <Page.Wrapper
+      slug="/"
+      description="We make food just like nonna, mouthwatering and always delicious."
+      img="/images/og.jpg"
+      className="IndexPage"
+    >
       {/* <header>
         <Navbar.OverlayWrapper>
           <Navbar.Logo>
