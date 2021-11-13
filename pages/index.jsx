@@ -14,7 +14,7 @@ import headerImage from '../public/images/contact-header.jpg'
 export default function ComingSoonPage() {
   const calculateTimeLeft = () => {
     let year = new Date().getFullYear()
-    const difference = +new Date(`11/15/${year}`) - +new Date()
+    const difference = +new Date(`11/14/${year}`) - +new Date()
     let timeLeft = {};
 
     if (difference > 0) {
