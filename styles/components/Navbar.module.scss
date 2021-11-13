@@ -53,10 +53,14 @@
 
 .Logo {
   display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 48px;
 
   svg {
-    width: 48px;
-    height: 48px;
+    height: 36px;
+    width: 356px;
+    max-width: 65vw;
   }
 }
 

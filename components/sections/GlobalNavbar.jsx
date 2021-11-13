@@ -6,7 +6,7 @@ export default function GlobalNavbar() {
   return (
     <Navbar.OverlayWrapper>
       <Navbar.Logo>
-        <Logo.Animated color="210, 195, 174" id="navbar" /> 
+        <Logo.Animated colorOne="210, 195, 174" colorTwo="190, 24, 12" colorStrokeOne="210, 195, 174" colorStrokeTwo="190, 24, 12" idOne="navbarOne" idTwo="navbarTwo" /> 
       </Navbar.Logo>
 
       <Navbar.NavView>

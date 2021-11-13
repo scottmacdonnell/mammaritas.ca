@@ -31,7 +31,7 @@ export default function GlobalFooter() {
         <Footer.Tagline>
           <Footer.Organization>
             <Footer.OrganizationLogo>
-              <Logo.Default
+              <Logo.Small
                 color="208, 195, 186"
                 id="footer"
               />
