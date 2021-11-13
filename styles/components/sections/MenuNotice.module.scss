@@ -2,6 +2,10 @@
   padding: 3rem 0;
   background-color: #BE180C;
   color: #D2C3AE;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: auto;
+  gap: 2rem;
   span {
     text-align: center;
   }
