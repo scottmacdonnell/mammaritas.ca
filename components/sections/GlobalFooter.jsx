@@ -8,9 +8,9 @@ export default function GlobalFooter() {
         <Footer.Nav>
           <Footer.NavTitle>mammaritas.ca</Footer.NavTitle>
           <Footer.NavContent>
-            <Footer.NavItem href="/beta">Homepage</Footer.NavItem>
-            <Footer.NavItem href="/beta/menu">Menu</Footer.NavItem>
-            <Footer.NavItem href="/beta/contact">Contact Us</Footer.NavItem>
+            <Footer.NavItem href="/">Homepage</Footer.NavItem>
+            <Footer.NavItem href="/menu">Menu</Footer.NavItem>
+            <Footer.NavItem href="/contact">Contact Us</Footer.NavItem>
           </Footer.NavContent>
         </Footer.Nav>
 

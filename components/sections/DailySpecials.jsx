@@ -79,7 +79,7 @@ export default function DailySpecials(props) {
 function OurMenuButton() {
   return (
     <Text.Anchor
-      href="/beta/menu"
+      href="/menu"
     >
       <button className={styles.OurMenuButton}>
         See Full Menu

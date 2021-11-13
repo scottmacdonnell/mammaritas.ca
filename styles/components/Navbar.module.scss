@@ -142,7 +142,7 @@
   left: 0;
   width: 100%;
   height: 0vh;
-  z-index: 98;
+  z-index: -98;
   opacity: 0%;
   transition: opacity 0.2s ease;
   .NavViewContainer {
@@ -155,11 +155,22 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    text-align: center;
+    h3, a { 
+      display: none;
+    }
   }
 }
 
 .NavViewActive {
   height: 100vh;
   opacity: 100%;
+  z-index: 98;
+  .NavViewContainer {
+    z-index: 99;
+    h3, a { 
+      display: block;
+      padding: 0.5rem 0;
+    }
+  }
 }

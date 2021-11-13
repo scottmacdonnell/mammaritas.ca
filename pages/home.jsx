@@ -1,11 +1,11 @@
-import * as Page from '../../components/Page'
+import * as Page from '../components/Page'
 
-import GlobalNavbar from '../../components/sections/GlobalNavbar'
-import IndexHeader from '../../components/sections/IndexHeader'
-import DailySpecials from '../../components/sections/DailySpecials'
-import OurStory from '../../components/sections/OurStory'
-import ContactForm from '../../components/sections/ContactForm'
-import GlobalFooter from '../../components/sections/GlobalFooter'
+import GlobalNavbar from '../components/sections/GlobalNavbar'
+import IndexHeader from '../components/sections/IndexHeader'
+import DailySpecials from '../components/sections/DailySpecials'
+import OurStory from '../components/sections/OurStory'
+import ContactForm from '../components/sections/ContactForm'
+import GlobalFooter from '../components/sections/GlobalFooter'
 
 export default function IndexPage() {
   return (
