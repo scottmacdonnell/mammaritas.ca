@@ -29,7 +29,7 @@ export default class MainDocument extends Document {
           {/* Global Meta Tags (Page.js) - OpenGraph */}
           <meta name="og:type" property="og:type" content="website" key="og:type" />
           <meta property="og:locale" content="en_US" key="og:locale" />
-          <meta name="og:site_name" property="og:site_name" content="Scott MacDonnell" key="og:sitename" />
+          <meta name="og:site_name" property="og:site_name" content="Mamma Rita's Cucina" key="og:sitename" />
         </Head>
         <body>
           <Main />
