@@ -29,14 +29,16 @@ export const OverlayWrapper = (props) => {
 }
 
 export const Logo = (props) => {
-  return <div className={styles.Logo} {...props}>
-    <Text.Anchor
-      href="/"
-      style={{ display: 'inline-flex' }}
-    >
-      {props.children}
-    </Text.Anchor>
-  </div>
+  return (
+    <div className={styles.Logo} {...props}>
+      <Text.Anchor
+        href="/"
+        style={{ display: 'inline-flex' }}
+      >
+        {props.children}
+      </Text.Anchor>
+    </div>
+  )
 }
 
 
@@ -61,7 +63,9 @@ export const NavView = (props) => {
       </div>
       <div className={`${styles.NavView} ${isOpen ? styles.NavViewActive : ''}`}>
         <div className={styles.NavViewContainer}>
-          {props.children}
+          <div className={styles.NavViewFlex}>
+            {props.children}
+          </div>
         </div>
       </div>
     </>
