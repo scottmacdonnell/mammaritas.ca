@@ -15,7 +15,7 @@ export default function MenuPage({ menuCategories, menuItems, preview }) {
     <Page.Wrapper
       slug="/menu"
       description="The quality of our ingredients and products is only surpassed by our passion for great tasting, authentic Italian meals, treats or drinks."
-      img="/og.png"
+      img="/images/menu-og.jpg"
       className="MenuPage"
     >
       <header>

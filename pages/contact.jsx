@@ -11,7 +11,7 @@ export default function ContactPage() {
     <Page.Wrapper
       slug="/contact"
       description="We love to hear your feedback, feel free to reach out with any questions or inquiries!"
-      img="/og.png"
+      img="/images/contact-og.jpg"
       className="ContactPage"
     >
       <header>

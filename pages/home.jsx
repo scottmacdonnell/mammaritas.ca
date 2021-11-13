@@ -12,7 +12,7 @@ export default function IndexPage() {
     <Page.Wrapper
       slug="/"
       description="We make food just like nonna, mouthwatering and always delicious."
-      img="/og.png"
+      img="/images/og.jpg"
       className="IndexPage"
     >
       <header>
