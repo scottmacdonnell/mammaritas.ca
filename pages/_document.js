@@ -14,12 +14,10 @@ export default class MainDocument extends Document {
       <Html lang={this.props.lang}>
         <Head>
           {/* Favicon */}
-          <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
-          <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
-          <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
-          <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#D2C3AE" />
-          <link rel="shortcut icon" href="/favicon/favicon.ico" />
-          <meta name="msapplication-TileColor" content="#BE180C" />
+          <link rel="icon" href="/favicon/favicon.svg" sizes="any" />
+          <link rel="mask-icon" href="/favicon/mask-icon.svg" color="#000000" />
+          <link rel="apple-touch-icon" href="/favicon/apple-touch-icon.png" />
+          <meta name="msapplication-TileColor" content="#d2c3ae" />
           <meta name="msapplication-config" content="/favicon/browserconfig.xml" />
           <meta name="theme-color" content="#D2C3AE" media="(prefers-color-scheme: light)" />
           <meta name="theme-color" content="#101010" media="(prefers-color-scheme: dark)" />

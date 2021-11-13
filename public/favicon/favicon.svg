@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28" xml:space="preserve" width="16" height="16">
+  <style>
+    @media (prefers-color-scheme: light) { :root { filter: none; } .a{ fill: #0F0F0F; } .b{ fill: #BE180C; } }
+    @media (prefers-color-scheme: dark) { :root { filter: none } .a{ fill: #D2C3AE; } .b{ fill: #BE180C; } }
+  </style>
+  <path
+    class="a"
+    d="M13.54,18.77H10.45V10.9L7,16.64H6.6L3.1,10.9v7.87H0V5.23H3.1l3.67,6,3.68-6h3.09Z"
+  />
+  <path
+    class="b"
+    d="M18.12,14.32H16.65v4.45h-3.1V5.23H19a4.63,4.63,0,0,1,4.64,4.64,4.45,4.45,0,0,1-2.49,3.93l2.88,5H20.67Zm-1.47-2.71H19a1.64,1.64,0,0,0,1.55-1.74A1.65,1.65,0,0,0,19,8.13H16.65Z"
+  />
+</svg>
