@@ -36,7 +36,7 @@ export default function ContactInfo() {
             </Text.Heading5>
 
             <Text.Paragraph>
-              N/A
+              (905)213-5673
             </Text.Paragraph>
             
             <Input.Spacer />
