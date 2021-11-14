@@ -21,8 +21,10 @@ export default function OurStory() {
             <Image
               src={ourStoryImage}
               alt="Our Story"
-              width={480}
-              height={720}
+              width={800}
+              height={600}
+              objectFit="cover"
+              objectPosition="center"
             />
 
             <Text.SHeading>
