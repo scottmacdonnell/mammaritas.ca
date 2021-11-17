@@ -39,7 +39,7 @@ export default function DailySpecials(props) {
               />
 
               <MenuItem
-                name="Pumpkin Tart or Apple Tart"
+                name="Pumpkin Tart"
                 price="$3.50 each"
                 description=""
               />
