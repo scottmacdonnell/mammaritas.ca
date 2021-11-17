@@ -1,10 +1,23 @@
+import useSWR from 'swr'
+
 import Container from '../Container'
 import MenuItem from '../MenuItem'
 import * as Text from '../Text'
+import Spinner from '../Spinner'
+
+import fetcher from '../../lib/fetcher'
 
 import styles from '../../styles/components/sections/DailySpecials.module.scss'
 
 export default function DailySpecials(props) {
+  const { data, error } = useSWR('/api/get-daily-specials', fetcher)
+
+  if (error) return <Error />
+
+  if (!data) return <Loading />
+
+  const { dailySpecials } = data
+
   return (
     <div className={styles.DailySpecials}>
       <Container>
@@ -20,35 +33,14 @@ export default function DailySpecials(props) {
               className={styles.Items}
               style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem'}}
             >
-              <MenuItem 
-                name="Bacon, cheddar and cauliflower soup and a crostini"
-                price="$6.50"
-                description=""
-              />
-
-              <MenuItem
-                name="Italian Meatloaf and a side house salad"
-                price="$10.50"
-                description=""
-              />
-
-              <MenuItem
-                name="Delicious treats:"
-                price=""
-                description=""
-              />
-
-              <MenuItem
-                name="Pumpkin Tart"
-                price="$3.50 each"
-                description=""
-              />
-
-              <MenuItem
-                name="Apple Tart"
-                price="$3.50 each"
-                description=""
-              />
+              {dailySpecials.map(item => (
+                <MenuItem
+                  key={item.url}
+                  name={item.name}
+                  price={item.price}
+                  description={item.description}
+                />
+              ))}
             </div>
           </div>
           {
@@ -73,5 +65,29 @@ function OurMenuButton() {
         See Full Menu
       </button>
     </Text.Anchor>
+  )
+}
+
+function Loading() {
+  return (
+    <div className={styles.DailySpecials}>
+      <Container>
+        <div className={styles.Loading}>
+          <Spinner />
+        </div>
+      </Container>
+    </div>
+  )
+}
+
+function Error() {
+  return (
+    <div className={styles.DailySpecials}>
+      <Container>
+        <div className={styles.Loading}>
+          <Text.Paragraph>We apologize for the inconvenience.</Text.Paragraph>
+        </div>
+      </Container>
+    </div>
   )
 }
