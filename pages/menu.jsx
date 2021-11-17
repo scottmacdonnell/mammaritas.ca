@@ -40,11 +40,10 @@ export default function MenuPage({ menuCategories, menuItems, preview }) {
   )
 }
 
-export async function getStaticProps({ preview = false }) {
+export async function getServerSideProps({ preview = false }) {
   const menuCategories = (await getMenuCategories(preview)) || []
   const menuItems = (await getMenuItems(preview)) || []
   return {
-    props: { menuCategories, menuItems, preview },
-    revalidate: 30,
+    props: { menuCategories, menuItems, preview }
   }
 }
