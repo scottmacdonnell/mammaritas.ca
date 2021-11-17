@@ -45,5 +45,6 @@ export async function getStaticProps({ preview = false }) {
   const menuItems = (await getMenuItems(preview)) || []
   return {
     props: { menuCategories, menuItems, preview },
+    revalidate: 30,
   }
 }
