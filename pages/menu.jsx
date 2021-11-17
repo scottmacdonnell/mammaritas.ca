@@ -25,10 +25,7 @@ export default function MenuPage({ menuCategories, menuItems, preview }) {
       <main>
         <MenuHeader />
         <DailySpecials />
-        <MenuView
-          menuCategories={menuCategories}
-          menuItems={menuItems}
-        />
+        <MenuView />
         <MenuNotice />
         <ContactForm />
       </main>
@@ -38,12 +35,4 @@ export default function MenuPage({ menuCategories, menuItems, preview }) {
       </footer>
     </Page.Wrapper>
   )
-}
-
-export async function getServerSideProps({ preview = false }) {
-  const menuCategories = (await getMenuCategories(preview)) || []
-  const menuItems = (await getMenuItems(preview)) || []
-  return {
-    props: { menuCategories, menuItems, preview }
-  }
 }

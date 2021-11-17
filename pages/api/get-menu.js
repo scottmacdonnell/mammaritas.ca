@@ -1,7 +1,13 @@
-import { getMenuCategories } from '../../lib/graphcms'
+import { getMenuCategories, getMenuItems } from '../../lib/graphcms'
 
-export default async function Handler(req, res) {
-  const data = (await getMenuCategories(false)) || []
+export default async function Handler(_, res) {
+  const menuCategories = (await getMenuCategories(false)) || []
+  const menuItems = (await getMenuItems(false)) || []
 
-  res.status(200).json({ data, msg: 'Message sent successfully.' })
+  res.setHeader(
+    'Cache-Control',
+    'public, s-maxage=60, stale-while-revalidate=30'
+  )
+
+  return res.status(200).json({ menuCategories, menuItems, msg: '200-Success' })
 }
