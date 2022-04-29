@@ -16,7 +16,14 @@ export default function DailySpecials(props) {
 
   if (!data) return <Loading />
 
-  const { dailySpecials } = data
+  const { dailySpecials, dailySpecialsDate } = data
+
+  const formattedDate = new Date(dailySpecialsDate).toLocaleDateString('en-US', {
+      weekday: 'short',
+      month: 'short',
+      day: 'numeric',
+    }
+  ).replace(/[,]/gm, '')
 
   return (
     <div className={styles.DailySpecials}>
@@ -33,6 +40,9 @@ export default function DailySpecials(props) {
               className={styles.Items}
               style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem'}}
             >
+              <div className={styles.Date}>
+                {formattedDate}
+              </div>
               {dailySpecials.map(item => (
                 <MenuItem
                   key={item.url}
