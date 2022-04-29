@@ -49,6 +49,17 @@ export default function ContactInfo() {
             <Text.Paragraph>
               mammaritascucina@gmail.com
             </Text.Paragraph>
+
+            <Input.Spacer />
+            <Input.Spacer />
+
+            <Text.Heading5>
+              Hours:
+            </Text.Heading5>
+
+            <Text.Paragraph>
+              11:30am - 7:00pm
+            </Text.Paragraph>
           </div>
         </div>
       </Container>
