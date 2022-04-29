@@ -22,9 +22,17 @@ export default function IndexHeader() {
                   </Title>
 
                   <Subtitle>
-                    {"We make food just like nonna-"}
+                    <br />
+                    {"We make food just like nonna—"}
                     <br />
                     {"mouthwatering and always delicious."}
+                    <br />
+                    <br />
+                    <Text.Small>{"Hours"}</Text.Small>
+                    <br />
+                    {"11:30am - 7:00pm"}
+                    <br />
+                    <br />
                   </Subtitle>
                 </div>
 
