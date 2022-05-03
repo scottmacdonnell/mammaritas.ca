@@ -1,0 +1,46 @@
+@import '../../breakpoints';
+
+.RestaurantClosures {
+  display: flex;
+  padding: 3rem 0;
+  background-color: #D2C3AE;
+}
+
+.ItemsWrapper {
+  display: flow-root;
+  padding-left: 1rem;
+}
+
+.SectionTitle {
+  display: inline-grid;
+  float: left;
+  h2 {
+    line-height: 0.875em;
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-align: center;
+    font-family: 'Gilroy', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+      Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    letter-spacing: normal;
+    writing-mode: vertical-lr; 
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);   
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    @media screen and (max-width: $breakpointMedium) {
+      font-size: 3rem;
+    }
+  }
+}
+
+.Date {
+  // margin-bottom: -1px;
+  padding: 0 0 6px 0;
+  color: #101010;
+  letter-spacing: -.02;
+  font-size: 1.25rem;
+  // font-family: 'Gilroy', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  //   Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
