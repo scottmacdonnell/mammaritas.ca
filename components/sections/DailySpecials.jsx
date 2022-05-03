@@ -17,8 +17,9 @@ export default function DailySpecials(props) {
   if (!data) return <Loading />
 
   const { dailySpecials, dailySpecialsDate } = data
+  dailySpecialsDate.split('-')
 
-  const formattedDate = new Date(dailySpecialsDate).toLocaleDateString('en-US', {
+  const formattedDate = new Date(`${dailySpecialsDate.split('-')[1]}/${dailySpecialsDate.split('-')[2]}/${dailySpecialsDate.split('-')[0]}`).toLocaleDateString('en-US', {
       weekday: 'short',
       month: 'short',
       day: 'numeric',
