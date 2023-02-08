@@ -46,3 +46,10 @@
     max-width: 480px;
   }
 }
+
+.Awards {
+  padding: 3rem 0 0 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
