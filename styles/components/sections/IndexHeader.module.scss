@@ -132,3 +132,12 @@
   background: rgba(210, 195, 174, 1);
   border: 1px solid rgba(210, 195, 174, 1);
 }
+
+.Awards {
+  max-width: fit-content;
+  padding: 3rem 0 0 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 3rem;
+  gap: 1rem;
+}

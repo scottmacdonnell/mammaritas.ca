@@ -1,3 +1,6 @@
+import Image from 'next/image'
+import Link from 'next/link'
+
 import * as Header from '../Header'
 import * as Text from '../Text'
 import Container from '../Container'
@@ -37,6 +40,8 @@ export default function IndexHeader() {
                 </div>
 
                 <OurMenuButton />
+
+                <Awards />
               </Container>
             </div>
           </div>
@@ -75,5 +80,58 @@ function OurMenuButton() {
         Our Menu
       </button>
     </Text.Anchor>
+  )
+}
+
+function Awards() {
+  return (
+    <div className={styles.Awards}>
+    <div>
+      <link
+        href="https://awards.infcdn.net/circ5_n.css"
+        rel="stylesheet"
+      />
+      <div
+        id="rest_circ5"
+      >
+        <div className="circ_cont">
+          <div
+            className="circ_img"
+            style={{
+              background:
+                'url("https://awards.infcdn.net/img/star_red.svg") no-repeat center'
+            }}
+          >
+            &nbsp;
+          </div>
+          <Link href="https://restaurantguru.com">
+            <a
+              target="_blank"
+              className="circ_top_title">
+              Restaurant Guru 2023
+            </a>
+          </Link>
+          <span className="">Recommended</span>
+          <Link href="https://restaurantguru.com/Mamma-Ritas-Cucina-Markham">
+            <a
+              className="circ_bot_title "
+              target="_blank">
+              Mamma Rita&apos;s Cucina
+            </a>
+          </Link>
+        </div>
+      </div>
+    </div>
+      <div>
+        <Image
+          src="/images/eirb22.jpeg"
+          alt="Our Story"
+          width={150}
+          height={150}
+          objectFit="cover"
+          objectPosition="center"
+        />
+      </div>
+    </div>
   )
 }
